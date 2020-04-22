@@ -1,0 +1,15 @@
+Introduction/Business Problem
+
+Description of the Problem: Prospects of a Coffee Shop Close to Office Areas in Zurich, Switzerland.
+
+Switzerland is among the top countries in the world when it comes to the consumption of coffee in the world (per capita), which makes it one of its most business oriented cities, Zurich, a good place to start a coffee shop business. 
+Mean (± SD) daily caffeine consumption per person and percentile 95 are 191 mg/day (± 129) and 426 mg/day, respectively. The three main sources of caffeine intake are 1) coffee (83% of total caffeine intake), 2) tea (9%) and 3) soft drinks (4%). Caffeine consumption seems to be highest between 06:00 and 09:00 (29%) (Rochat et al, 2019). 
+Target Client - what kind of client would be interested in this data science project? Entrepreneurs who want to invest or start a coffee shop.  This analysis will be a comprehensive guide to select the location for opening a coffee shop in Zurich. 
+
+Data
+
+1. Data preparation - first, we need to scrap the data on Zurich neighbourhoods (https://en.wikipedia.org/wiki/Subdivisions_of_Z%C3%BCrich)
+2. Then get the geographical coordinates of each neighborhood (e.g. via the geolocator library)
+3. Use the geographical coordinates of each neighborhood and pass them to the Foursquare API, which returns a list of venues in the neighborhood within a given radius (e.g. 500 m). 
+Perform k-means clustering on the neighborhood venues data to cluster neighborhoods into groups that are similar by venue type
+Based on these clusters, identify preferred neighborhoods where to open a a coffee shop. 
